@@ -1,0 +1,5 @@
+-module (questao1).
+-export ([fat/1]).
+
+fat(0) -> 1;
+fat(N) when N > 0 -> N * fat(N-1).
