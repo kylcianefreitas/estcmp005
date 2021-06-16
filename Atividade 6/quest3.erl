@@ -1,11 +1,15 @@
+% 3.Intercala: recebe duas listas e retorna outra lista com os elementos das listas originais intercalados. ex.:
+% (intercala '(1 2 3) '(8 9)) ==> (1 8 2 9 3)
+% (intercala '() '(1 2 6)) ==> (1 2 6)
+
 -module(quest3).
 -import(lists,[append/2]).
 -import(lists,[merge/2]).
 -export([start/0]).
 
 start() ->
-   Lst1 = [1,2,3],
-   Lst2 = [3,4,5],
-   Lst3 = merge(Lst1,Lst2),
-   Set = sets:from_list(Lst3),
+   Lista1 = [1,2,3],
+   Lista2 = [8,9],
+   Lista3 = merge(Lista2,Lista1),
+   Set = sets:from_list(Lista3),
    sets:to_list(Set).
