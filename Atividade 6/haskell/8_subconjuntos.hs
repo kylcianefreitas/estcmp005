@@ -4,5 +4,5 @@ module Subsets
     ) where
 
 subsets :: [a] -> [[a]]
-subsets [] = [[]]
+subsets [] = [[]] 
 subsets (x:lista) = subsets lista ++ map (x:) (subsets lista)
