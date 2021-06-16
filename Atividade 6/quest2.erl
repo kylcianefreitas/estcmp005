@@ -1,3 +1,5 @@
+% 2.fibonacci: recebe um número inteiro positivo e retorna o n-ésimo elemento da seqüência de Fibonacci
+
 -module(quest2).
 -export([fibonacci/1]).
 
