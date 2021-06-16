@@ -2,8 +2,7 @@
 %Faça um programa que encontra o conjunto das partes de uma lista
 
 -module (quest8).
--export ([start/1]).
+-export ([conjuntos/1]).
 
-start()->
-  perms([]) -> [[]];
-  perms(L)  -> [[H|T] || H <- L, T <- perms(L--[H])].
+  conjuntos([]) -> [[]];
+  conjuntos([H|T]) -> A = conjuntos(T), [[H|B] || B <- A ] ++ A.
